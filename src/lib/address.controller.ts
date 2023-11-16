@@ -22,6 +22,7 @@ export class AddressController {
       const result = await this.addressRepository.get(userId)
       return JSON.stringify(result)
     } catch (error) {
+      console.log("A")
       console.log(error)
     }
   }
